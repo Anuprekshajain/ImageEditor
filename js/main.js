@@ -6,7 +6,7 @@ if (typeof window.FileReader === 'undefined') {
   state.className = 'fail';
 } else {
   state.className = 'success';
-  state.innerHTML = '';
+  state.innerHTML = '.';
 }
 
 upload.onchange = function (e) {
