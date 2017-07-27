@@ -1,0 +1,127 @@
+body{
+    background-color: #ffe0b3;
+    }
+    .wrapper {
+    margin: 2.5% auto;
+    max-width: 960px;
+    min-width: 960px;
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 4em;
+}
+#holder {
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    vertical-align: top;
+    float:left;
+    margin-left: 1%;
+    width: 60%;
+}
+
+#holder img {
+    width: 100%;
+}
+p{
+    text-align: center;
+    font:italic bold 30px/30px Georgia, serif;
+}
+/* Styles for sliders*/
+
+.sliders {
+    float:right;
+    width: 30%;
+    display: inline-block;
+    background-color:white;
+    border: 2px solid #000;
+    padding-left: 10px;
+}
+
+.sliders p {
+    margin: 18px 0;
+    vertical-align: middle;
+
+}
+
+.sliders label {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    width: 100px;
+    font-size: 1.1rem;
+    color: #22313F;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.sliders input {
+    position: relative;
+    margin: 10px 20px 0 10px;
+    vertical-align: middle;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    border-radius: 5px;
+
+    /*required for proper track sizing in FF*/
+    width: 150px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 7px;
+    background: #ABB7B7;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #4B77BE;
+    margin-top: -6px;
+    vertical-align: middle;
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:hover {
+    cursor: pointer;
+}
+
+
+#reset {
+    display: inline-block;
+    height: 2.5rem;
+    width: 95%;
+    background-color: #22A7F0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px 10px 0px;
+    border: 2px solid transparent;
+}
+
+#reset:hover {
+    color: #22A7F0;
+    background-color: #fff;
+    border: 2px solid #22A7F0;
+}
+#btn{
+ margin-left: 10px;
+
+}
+
