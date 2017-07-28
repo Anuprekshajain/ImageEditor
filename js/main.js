@@ -2,13 +2,17 @@ var upload = document.getElementsByTagName('input')[0],
     holder = document.getElementById('holder'),
     state = document.getElementById('status');
 
-if (typeof window.FileReader === 'undefined') {
+/**if (typeof window.FileReader === 'undefined') {
   state.className = 'fail';
 } else {
   state.className = 'success';
   state.innerHTML = 'File API & FileReader available';
+}**/
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  // Great success! All the File APIs are supported.
+} else {
+  alert('The File APIs are not fully supported in this browser.');
 }
-
 upload.onchange = function (e) {
   e.preventDefault();
 
