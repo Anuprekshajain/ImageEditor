@@ -75,7 +75,7 @@ $('#holder').on('reset', function () {
   },0);
 });
 
- $('#btnsave').click(function(){
+/** $('#btnsave').click(function(){
     html2canvas($('#holder'),
     {
       allowTaint: true,
@@ -89,4 +89,4 @@ $('#holder').on('reset', function () {
         a.click();
       }
     });
-  });
+  });*/
